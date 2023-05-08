@@ -23,7 +23,7 @@ const MyCart = ({navigation}) => {
     return unsubscribe;
   }, [navigation]);
 
-  //get data from local DB by ID
+
   const getDataFromDB = async () => {
     let items = await AsyncStorage.getItem('cartItems');
     items = JSON.parse(items);
@@ -71,7 +71,7 @@ const MyCart = ({navigation}) => {
     }
   };
 
-  //checkout
+
 
   const checkOut = async () => {
     try {

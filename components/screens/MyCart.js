@@ -43,7 +43,7 @@ const MyCart = ({navigation}) => {
     }
   };
 
-  //get total price of all items in the cart
+
   const getTotal = productData => {
     let total = 0;
     for (let index = 0; index < productData.length; index++) {
@@ -53,7 +53,7 @@ const MyCart = ({navigation}) => {
     setTotal(total);
   };
 
-  //remove data from Cart
+
 
   const removeItemFromCart = async id => {
     let itemArray = await AsyncStorage.getItem('cartItems');
